@@ -1,10 +1,9 @@
 function reverse(stringa){
-    let reversed=[];
-    reversed.length=stringa.length;
-    for(let i=0; i<stringa.length;i++){
-        reversed[stringa.length-1-i]=stringa[i];
+    let reversed="";
+    for(let i=stringa.length-1; i>=0;i--){
+        reversed+=stringa[i];
     }
-    return reversed.join("");
+    return reversed;
 }
 var parola=prompt("scrivi una parola");
-console.log(reverse(parola));
+alert(reverse(parola));
