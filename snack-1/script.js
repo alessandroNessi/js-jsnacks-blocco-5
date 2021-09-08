@@ -1,9 +1,11 @@
-function popolaZucchine(zucchine){
-    let zucchina={ "tipo":"","peso":"","lunghezza":""};
+function popolaZucchine(){
+    let zucchine = [];
     while(zucchine.length<10){
-        zucchina.tipo="";
-        zucchina.peso="";
-        zucchina.lunghezza="";
+        var zucchina={ "tipo":"","peso":"","lunghezza":""};
+        // zucchina.tipo="";
+        // zucchina.peso="";
+        // zucchina.lunghezza="";
+        console.log(zucchina);
         zucchina.tipo="zucchina"+Math.floor(Math.random()*100);
         zucchina.peso=Math.floor(Math.random()*200 +50)+"g";
         zucchina.lunghezza=Math.floor(Math.random()*100+10)+"cm";
@@ -11,6 +13,5 @@ function popolaZucchine(zucchine){
     }
     return zucchine;
 }
-var zucchine=[];
-popolaZucchine(zucchine);
+var zucchine= popolaZucchine();
 console.log(zucchine);
