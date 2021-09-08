@@ -15,5 +15,5 @@ function merge(array1,array2){
     }
     return result;
 }
-var array1=[1,2,3], array2=["a","b","c","d","e"];
+var array1=[1,2,3], array2=["a","b"];
 console.log(merge(array1,array2));
