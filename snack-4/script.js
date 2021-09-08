@@ -1,14 +1,19 @@
 function merge(array1,array2){
-    let result=[];
-    for(let i=0; i<array1.length&&i<array2.length;i++){
+    let result=[],max;
+    if(array2.length<array1.length){
+        max=array1.length;
+    }else{
+        max=array2.length;
+    }
+    for(let i=0; i<max;i++){
         if(array1[i]!=undefined){
             result.push(array1[i]);
         }
-        if(array1[i]!=undefined){
+        if(array2[i]!=undefined){
             result.push(array2[i]);
         }
     }
     return result;
 }
-var array1=[1,2,3], array2=["a","b","c"];
+var array1=[1,2,3], array2=["a","b","c","d","e"];
 console.log(merge(array1,array2));
